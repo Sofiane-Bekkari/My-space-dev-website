@@ -1,3 +1,9 @@
+// Variable 
+$primary-color: #00ffffb6;
+$secondary-color: #F05B6F;
+$third-color: #F7941E;
+$addition-color: #00ffffb6;
+
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +11,26 @@
 body {
     font-family: 'Dosis', sans-serif;
 }
-.container {
+#bg-img {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: linear-gradient(
     rgba(0, 0, 0, 0.055),
-    rgba(13, 136, 184, 0.397),
-    rgba(187, 34, 7, 0.198)),
+    rgba(13, 116, 184, 0.034)),
     url(/Img/spaceground.jpg) center no-repeat;
     background-size: cover;
 }
+header {
+    height:  9vh;
+    #logo {
+       img {
+           width: 120px;
+           padding: 0;
+           margin: .5rem;
+       }
+    }
+}
+// Burger icon
 .burger-menu {
     width: 35px;
     height: 30px;
@@ -42,21 +58,25 @@ body {
 .change .line-3 {
     transform: rotateZ(-405deg) translate(6px,-8px) ;
 }
+
+// NavBar with "High" Z-index
 .navbar {
     background:#2e436be8;
     height: 100vh;
-    width: 20%;
-    right: -550px;
+    top:0;
+    width: 50%;
+    right: -250px;
     position: fixed;
     display: flex;
     justify-content:center;
     align-items: center;
     border-radius: 5% 0 0 5%;
     transition: right 1s cubic-bezier(0,1,0,0);
+    z-index: 2;
 
 }
 .change {
-    right: 0;
+    right: 0%;
 }
 .nav-list {
     text-align: right;
@@ -72,11 +92,11 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     position: relative;
-    right: -100px;
+    right: -50px;
     padding: 3px 0;
 }
 
-/**  Before &&  After  **/
+/**  Before &&  After Effect Lines **/
 .nav-links::before,
 .nav-links::after {
     content: "";
@@ -100,15 +120,40 @@ body {
 .nav-links:hover::after {
     transform: scaleX(1);
 }
-header {
+// Main Style
+main {
     text-align: center;
-    height: 50vh;
+    position: relative;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-header h1 {
-    font-size: 4em;
-    font-weight: 500;
-    color: rgba(0, 255, 255, 0.712);
+
+    .main-text{
+        margin-top: 5%;
+
+        h1 {
+            font-size: 2em;
+            font-weight: 500;
+            letter-spacing: .5rem;
+            text-transform: uppercase;
+            color: $primary-color;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            margin: auto;
+            width: 55%;
+        }
+    }
+    .ship {
+       img {
+        position: absolute;
+        top: 65%;
+        display: block;
+        width: 100px;
+       }
+    }
 }
