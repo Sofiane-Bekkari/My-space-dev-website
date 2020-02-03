@@ -1,0 +1,39 @@
+// Variable 
+$primary-color: #00ffffb6;
+$primary-sec-color: #00ffff60;
+$secondary-color: #F05B6F;
+$third-color: #F7941E;
+$addition-color: #00ffffb6;
+
+// Button 
+.btn {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: .6rem 1rem;
+    font-family: 'Dosis', sans-serif;
+    transition: all .5s ease;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}
+.btn-blue {
+    background: $primary-color;
+    transition: all .5s ease;
+
+    &:hover {
+        //background: lightness( $secondary-color,9);
+        background: $primary-sec-color;
+        transform: translateY(-3px);
+    }
+    &:active {
+        transform: translateY(0);
+    }
+}
