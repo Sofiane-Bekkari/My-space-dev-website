@@ -14,16 +14,18 @@ body {
     background: linear-gradient(
     rgba(0, 0, 0, 0.055),
     rgba(13, 116, 184, 0.034)),
-    url(/Img/spaceground.jpg) center no-repeat;
+    url(../Img/space-background-m.png) center no-repeat;
     background-size: cover;
 }
 header {
     height:  9vh;
+    width: 100%;
     #logo {
        img {
            width: 120px;
-           padding: 0;
-           margin: .5rem;
+           display: block;
+           padding-left: 1rem;
+           margin: .5rem 0 0 0;
        }
     }
 }
@@ -32,7 +34,7 @@ header {
     width: 35px;
     height: 30px;
     position: fixed;
-    right: 20px;
+    right: 5%;
     top: 20px;
     cursor: pointer;
     display: flex;
@@ -42,7 +44,7 @@ header {
 .line {
     width: 100%;
     height: 3px;
-    background-color:  rgba(42, 53, 63, 0.986);
+    background-color:  $primary-sec-color;
     transition: ease 0.5s;
     border-radius: 30px;
 }
@@ -69,7 +71,7 @@ header {
     align-items: center;
     border-radius: 5% 0 0 5%;
     transition: right 1s cubic-bezier(0,1,0,0);
-    z-index: 2;
+    z-index: 5;
 
 }
 .change {
@@ -99,7 +101,7 @@ header {
     content: "";
     width: 100%;
     height: 2px;
-    background-color:cyan;
+    background-color: $primary-color;
     position: absolute;
     left: 0;
     transform: scaleX(0);
@@ -150,14 +152,16 @@ main {
             text-align: center;
             margin: auto;
             width: 55%;
+            text-shadow: 2px 2px 3px #333 ;
         }
     }
     .ship {
        img {
         position: absolute;
-        top: 65%;
+        left: 20%;
+        top: 75%;
         display: block;
-        width: 100px;
+        width: 110px;
        }
     }
 }
@@ -177,7 +181,7 @@ section.sec-bg {
                 position: absolute;
                 display: block;
                 top: 5%;
-                right: 10%;
+                right: 15%;
                 margin-bottom: 2rem;
             }
         }
@@ -186,7 +190,6 @@ section.sec-bg {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            color: $secondary-color;
             right: 0;
             top: 25%;
             margin: 1rem auto;
@@ -194,13 +197,21 @@ section.sec-bg {
             height: 50%;
             z-index: 1;
 
+            h2 {
+                color: $secondary-color;
+
+            }
+
             p {
                 color: $third-color;
-                margin-bottom: 1rem;
+                margin-bottom: 1.5rem;
             }
             .btn {
                 margin: 0;
-            } 
+                font-size: 1rem;
+                letter-spacing: 1px;
+
+            }
         }
         .man-planet {
             img {
@@ -240,9 +251,9 @@ section.sec-2 {
 
 // Section Three Style 
 
-section.sec-3 {
+section.sec-bg.sec-3 {
     position: relative;
-    margin: 0 auto;
+    height: 50vh;
 
     .dark-layer {
         text-align: center;
@@ -255,7 +266,7 @@ section.sec-3 {
         .earth {
             display: block;
             position: absolute;
-            top: 40%;
+            top: 30%;
             right: 10%;
             width: 25%;
         }
@@ -266,4 +277,144 @@ section.sec-3 {
             width: 20%;
         }
     }
+    .text-content2 {
+        text-align: center;
+        padding-bottom:0;
+        margin-top: 1rem ;
+        margin-bottom: 0;
+
+        h2 {
+            color: $primary-color;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        p {
+            color: $third-color;
+        }
+    }
 }
+
+section.sec-4 {
+    background: url(../Img/background-space.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    top: 0%;
+    margin:0;
+    padding:0;
+      // Planet part 
+      .planets {
+        padding: 0;
+        margin: 0;
+
+        span {
+            display: block;
+            width: 40%;
+            margin: auto;
+            padding: 0;
+            color: $marcury-color;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-align: center;
+
+            &.mars {
+                color: $third-color;
+            }
+            &.earth {
+                color: $primary-color;
+            }
+            &.star {
+                color: $secondary-color;
+            }
+        }
+        .all-planets {
+            display: block;
+            width: 40%;
+            margin:0 auto 1rem auto;
+            cursor: pointer;
+
+        }
+    }
+    // Button Planet
+    .two-btn {
+        background: url(../Img/background-space.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20vh;
+        .btn {
+            display: inline-block;
+            font-size: 1rem;
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+// Section Five 
+section.sec-5 {
+    #last {
+        display: block;
+        height: 43vh;
+        img {
+            width: 100%;
+        }
+    }
+} 
+// Footer 
+footer {
+    width: 100%;
+    background: url(../Img/background-space.png) no-repeat center;
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+    
+    #footer-sec {
+      
+        height: 50vh;
+        position: relative;
+
+        img {
+            &.dark-back {
+                width: 100%;
+                position: absolute;
+                bottom: -20%;
+            }
+
+            &.ship-space {
+                position: absolute;
+                top: 50%;
+                left: 9%;
+                width: 30%;
+
+            }
+            &.astro-man {
+                position: absolute;
+                right: 0;
+                top: 23%;
+                width: 30%;
+            }
+            &.cloud {
+                position: absolute;
+                top: 75%;
+                left: 4%;
+                width: 20%;
+                z-index: 1;
+                transform: rotate(10deg);
+            }
+        }
+    }
+    #footer-text {
+        position: absolute;
+        display: block;
+        left: -50%;
+        right: -50%;
+        top: 90%;
+        margin: auto;
+        text-align: center;
+        color: $marcury-color;
+        z-index: 3;
+    }
+}
+
+// Importing Media utilities At End!!
+@import 'mobile';

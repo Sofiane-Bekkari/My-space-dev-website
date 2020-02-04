@@ -2,8 +2,10 @@
 $primary-color: #00ffffb6;
 $primary-sec-color: #00ffff60;
 $secondary-color: #F05B6F;
+$secondary-sec-color: rgba(240, 91, 111, 0.774);
 $third-color: #F7941E;
 $addition-color: #00ffffb6;
+$marcury-color: #669999;
 
 // Button 
 .btn {
@@ -29,11 +31,38 @@ $addition-color: #00ffffb6;
     transition: all .5s ease;
 
     &:hover {
-        //background: lightness( $secondary-color,9);
         background: $primary-sec-color;
+        color: $addition-color;
         transform: translateY(-3px);
     }
     &:active {
         transform: translateY(0);
+    }
+}
+
+// Media Query Mixin
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px)
+    and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
     }
 }

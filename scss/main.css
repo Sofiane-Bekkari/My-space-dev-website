@@ -26,6 +26,7 @@
 
 .btn-blue:hover {
   background: #00ffff60;
+  color: #00ffffb6;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -48,26 +49,28 @@ body {
 #bg-img {
   width: 100%;
   height: 50vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.055)), to(rgba(13, 116, 184, 0.034))), url(/Img/spaceground.jpg) center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(13, 116, 184, 0.034)), url(/Img/spaceground.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.055)), to(rgba(13, 116, 184, 0.034))), url(../Img/space-background-m.png) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.055), rgba(13, 116, 184, 0.034)), url(../Img/space-background-m.png) center no-repeat;
   background-size: cover;
 }
 
 header {
   height: 9vh;
+  width: 100%;
 }
 
 header #logo img {
   width: 120px;
-  padding: 0;
-  margin: .5rem;
+  display: block;
+  padding-left: 1rem;
+  margin: .5rem 0 0 0;
 }
 
 .burger-menu {
   width: 35px;
   height: 30px;
   position: fixed;
-  right: 20px;
+  right: 5%;
   top: 20px;
   cursor: pointer;
   display: -webkit-box;
@@ -84,7 +87,7 @@ header #logo img {
 .line {
   width: 100%;
   height: 3px;
-  background-color: rgba(42, 53, 63, 0.986);
+  background-color: #00ffff60;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
   border-radius: 30px;
@@ -123,7 +126,7 @@ header #logo img {
   border-radius: 5% 0 0 5%;
   -webkit-transition: right 1s cubic-bezier(0, 1, 0, 0);
   transition: right 1s cubic-bezier(0, 1, 0, 0);
-  z-index: 2;
+  z-index: 5;
 }
 
 .change {
@@ -156,7 +159,7 @@ header #logo img {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: cyan;
+  background-color: #00ffffb6;
   position: absolute;
   left: 0;
   -webkit-transform: scaleX(0);
@@ -225,13 +228,15 @@ main .main-text p {
   text-align: center;
   margin: auto;
   width: 55%;
+  text-shadow: 2px 2px 3px #333;
 }
 
 main .ship img {
   position: absolute;
-  top: 65%;
+  left: 20%;
+  top: 75%;
   display: block;
-  width: 100px;
+  width: 110px;
 }
 
 section.sec-bg {
@@ -249,7 +254,7 @@ section.sec-bg.sec-1 .planet-pink img {
   position: absolute;
   display: block;
   top: 5%;
-  right: 10%;
+  right: 15%;
   margin-bottom: 2rem;
 }
 
@@ -265,7 +270,6 @@ section.sec-bg.sec-1 .text-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #F05B6F;
   right: 0;
   top: 25%;
   margin: 1rem auto;
@@ -274,13 +278,19 @@ section.sec-bg.sec-1 .text-content {
   z-index: 1;
 }
 
+section.sec-bg.sec-1 .text-content h2 {
+  color: #F05B6F;
+}
+
 section.sec-bg.sec-1 .text-content p {
   color: #F7941E;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 section.sec-bg.sec-1 .text-content .btn {
   margin: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 section.sec-bg.sec-1 .man-planet img {
@@ -320,34 +330,182 @@ section.sec-2 .halo-big .ship {
   right: 10%;
 }
 
-section.sec-3 {
+section.sec-bg.sec-3 {
   position: relative;
-  margin: 0 auto;
+  height: 50vh;
 }
 
-section.sec-3 .dark-layer {
+section.sec-bg.sec-3 .dark-layer {
   text-align: center;
   margin: 0 auto;
 }
 
-section.sec-3 .dark-layer .dark {
+section.sec-bg.sec-3 .dark-layer .dark {
   display: block;
   width: 100%;
   height: 40vh;
 }
 
-section.sec-3 .dark-layer .earth {
+section.sec-bg.sec-3 .dark-layer .earth {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 10%;
   width: 25%;
 }
 
-section.sec-3 .dark-layer .rockfire {
+section.sec-bg.sec-3 .dark-layer .rockfire {
   display: block;
   position: absolute;
   top: 0;
   width: 20%;
+}
+
+section.sec-bg.sec-3 .text-content2 {
+  text-align: center;
+  padding-bottom: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+section.sec-bg.sec-3 .text-content2 h2 {
+  color: #00ffffb6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section.sec-bg.sec-3 .text-content2 p {
+  color: #F7941E;
+}
+
+section.sec-4 {
+  background: url(../Img/background-space.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  top: 0%;
+  margin: 0;
+  padding: 0;
+}
+
+section.sec-4 .planets {
+  padding: 0;
+  margin: 0;
+}
+
+section.sec-4 .planets span {
+  display: block;
+  width: 40%;
+  margin: auto;
+  padding: 0;
+  color: #669999;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section.sec-4 .planets span.mars {
+  color: #F7941E;
+}
+
+section.sec-4 .planets span.earth {
+  color: #00ffffb6;
+}
+
+section.sec-4 .planets span.star {
+  color: #F05B6F;
+}
+
+section.sec-4 .planets .all-planets {
+  display: block;
+  width: 40%;
+  margin: 0 auto 1rem auto;
+  cursor: pointer;
+}
+
+section.sec-4 .two-btn {
+  background: url(../Img/background-space.png) no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 20vh;
+}
+
+section.sec-4 .two-btn .btn {
+  display: inline-block;
+  font-size: 1rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+section.sec-5 #last {
+  display: block;
+  height: 43vh;
+}
+
+section.sec-5 #last img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background: url(../Img/background-space.png) no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+}
+
+footer #footer-sec {
+  height: 50vh;
+  position: relative;
+}
+
+footer #footer-sec img.dark-back {
+  width: 100%;
+  position: absolute;
+  bottom: -20%;
+}
+
+footer #footer-sec img.ship-space {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  width: 30%;
+}
+
+footer #footer-sec img.astro-man {
+  position: absolute;
+  right: 0;
+  top: 23%;
+  width: 30%;
+}
+
+footer #footer-sec img.cloud {
+  position: absolute;
+  top: 75%;
+  left: 4%;
+  width: 20%;
+  z-index: 1;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+footer #footer-text {
+  position: absolute;
+  display: block;
+  left: -50%;
+  right: -50%;
+  top: 90%;
+  margin: auto;
+  text-align: center;
+  color: #669999;
+  z-index: 3;
 }
 /*# sourceMappingURL=main.css.map */
