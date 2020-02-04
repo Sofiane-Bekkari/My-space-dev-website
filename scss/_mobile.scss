@@ -1,0 +1,172 @@
+// Start at Small Secreen
+@include mediaSm {
+    body {
+        overflow-x: hidden;
+    }
+    #bg-img {
+        height: 50vh;
+    }
+    //FIX Burger & Nav
+    .burger-menu {
+        position: fixed;
+        right: 25%;
+    }
+    .navbar {
+        height: 80vh;
+        top:0;
+        width: 50%;
+        right: -250px;
+        position: fixed;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        border-radius: 5% 0 0 5%;
+        transition: right 1s cubic-bezier(0,1,0,0);
+        z-index: 5;
+    
+    }
+    .change {
+        right: 20%;
+    }
+    .nav-links {
+        right: -40px;
+        padding: 3px 0;
+    }
+    // SECTION 1
+    section.sec-bg.sec-1 {
+
+        .text-content {
+            .btn {
+                width: 90%;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+        .planet-pink {
+            img {
+                top: 3%;
+                display: block;
+                width: 30%;
+            }
+        }
+    }
+    // SECTION 2
+    section.sec-2 {
+
+        .halo-big {
+
+            .halo {
+            }
+            .ship {
+                width: 25%;
+                top: 20%;
+                right: 10%;
+            }
+        }
+    }
+    // SECTION 3
+    section.sec-bg.sec-3 {
+        position: relative;
+        height: 50vh;
+    
+        .dark-layer {
+            text-align: center;
+            margin: 0 auto;
+            .dark { 
+                width: 100%;
+                height: 30vh;
+            }
+            .earth {
+                display: block;
+                position: absolute;
+                top: 30%;
+                right: 10%;
+                width: 25%;
+            }
+            .rockfire {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 5%;
+                width: 18%;
+            }
+        }
+        .text-content2 {
+            width: 100%;
+            text-align: center;
+            margin: 3rem auto;
+
+            h2 {
+                width: 80%;
+                margin: 0 auto;
+            }
+            p{
+                width: 80%;
+                margin: auto;
+            }
+        }
+       
+    }
+    // SECTION 4
+    section.sec-4 {
+        .planets {
+            padding-top: 1rem ;
+            img{
+                &.all-planets {
+                    width: 30%;
+                    margin-bottom: .5rem;
+                }
+            }
+            span {
+                margin-bottom: 1rem;
+            }
+        }
+        .two-btn {
+            .btn {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        }
+    }
+    // SECTION 5
+    section.sec-5 {
+        #last {
+            display: block;
+            height: 0vh;
+            img {
+                width: 100%;
+            }
+        }
+    } 
+    // FOOTER
+    footer {
+        #footer-sec {
+            position: relative;
+
+            img {
+
+                &.ship-space {
+                    top: 72%;
+                    left: 9%;
+                    width: 30%;
+
+                }
+                &.astro-man {
+                    right: 5%;
+                    top: 55%;
+                    width: 30%;
+                }
+                &.cloud {
+                    top: 90%;
+                    left: 4%;
+                    width: 20%;
+                    z-index: 1;
+                    transform: rotate(9deg);
+                }
+            }
+        }
+        #footer-text {
+            width: 60%;
+        }
+    }
+}

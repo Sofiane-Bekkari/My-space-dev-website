@@ -508,4 +508,143 @@ footer #footer-text {
   color: #669999;
   z-index: 3;
 }
+
+@media screen and (max-width: 499px) {
+  body {
+    overflow-x: hidden;
+  }
+  #bg-img {
+    height: 50vh;
+  }
+  .burger-menu {
+    position: fixed;
+    right: 25%;
+  }
+  .navbar {
+    height: 80vh;
+    top: 0;
+    width: 50%;
+    right: -250px;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5% 0 0 5%;
+    -webkit-transition: right 1s cubic-bezier(0, 1, 0, 0);
+    transition: right 1s cubic-bezier(0, 1, 0, 0);
+    z-index: 5;
+  }
+  .change {
+    right: 20%;
+  }
+  .nav-links {
+    right: -40px;
+    padding: 3px 0;
+  }
+  section.sec-bg.sec-1 .text-content .btn {
+    width: 90%;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  section.sec-bg.sec-1 .planet-pink img {
+    top: 3%;
+    display: block;
+    width: 30%;
+  }
+  section.sec-2 .halo-big .ship {
+    width: 25%;
+    top: 20%;
+    right: 10%;
+  }
+  section.sec-bg.sec-3 {
+    position: relative;
+    height: 50vh;
+  }
+  section.sec-bg.sec-3 .dark-layer {
+    text-align: center;
+    margin: 0 auto;
+  }
+  section.sec-bg.sec-3 .dark-layer .dark {
+    width: 100%;
+    height: 30vh;
+  }
+  section.sec-bg.sec-3 .dark-layer .earth {
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 25%;
+  }
+  section.sec-bg.sec-3 .dark-layer .rockfire {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 18%;
+  }
+  section.sec-bg.sec-3 .text-content2 {
+    width: 100%;
+    text-align: center;
+    margin: 3rem auto;
+  }
+  section.sec-bg.sec-3 .text-content2 h2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  section.sec-bg.sec-3 .text-content2 p {
+    width: 80%;
+    margin: auto;
+  }
+  section.sec-4 .planets {
+    padding-top: 1rem;
+  }
+  section.sec-4 .planets img.all-planets {
+    width: 30%;
+    margin-bottom: .5rem;
+  }
+  section.sec-4 .planets span {
+    margin-bottom: 1rem;
+  }
+  section.sec-4 .two-btn .btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  section.sec-5 #last {
+    display: block;
+    height: 0vh;
+  }
+  section.sec-5 #last img {
+    width: 100%;
+  }
+  footer #footer-sec {
+    position: relative;
+  }
+  footer #footer-sec img.ship-space {
+    top: 72%;
+    left: 9%;
+    width: 30%;
+  }
+  footer #footer-sec img.astro-man {
+    right: 5%;
+    top: 55%;
+    width: 30%;
+  }
+  footer #footer-sec img.cloud {
+    top: 90%;
+    left: 4%;
+    width: 20%;
+    z-index: 1;
+    -webkit-transform: rotate(9deg);
+            transform: rotate(9deg);
+  }
+  footer #footer-text {
+    width: 60%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
