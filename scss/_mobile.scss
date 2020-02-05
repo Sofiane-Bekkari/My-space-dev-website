@@ -169,10 +169,17 @@
     }
 }
 
-// Media AT Meddim Screen 
+// Media AT large Screen 
 @include mediaLg {
     #bg-img {
         height: 75vh;
+    }
+    header {
+        #logo {
+            img {
+                margin-left: 1rem;
+            }
+        }
     }
     .navbar {
       width: 35%;
@@ -335,53 +342,313 @@
         }
     }
     // FOOTER 
-footer {
-    #footer-sec {
-        height: 50vh;
-        img {
-            
+    footer {
+        #footer-sec {
+            height: 50vh;
+            img {
 
-            &.dark-back {
-                width: 100%;
-                bottom: -20%;
-                height: 70vh;
+
+                &.dark-back {
+                    width: 100%;
+                    bottom: -20%;
+                    height: 70vh;
+                }
+            
+                &.ship-space {
+                    top: 20%;
+                    left: 10%;
+                    width: 250px;
+                    z-index: 1;
+                    cursor: pointer;
+                    transition: ease-in-out 1.5s;
+
+                    &:hover {
+                        transform: translateY(5px);
+                        transition: ease .5s;
+                    }
+                    &:active {
+                        transform: translatey(-15px);
+
+                    }
+                
+                }
+                &.astro-man {
+                    right: 5%;
+                    top: -10%;
+                    width: 200px;
+                    cursor: pointer;
+                }
+                &.cloud {
+                    top: 65%;
+                    left: 7%;
+                    width: 130px;
+                    z-index: 1;
+                    transform: rotate(15deg);
+                }
             }
+
+
+        }
+    }
+
+}
+
+// Media AT EXTRA-large Screen 
+@include mediaXl {
+    #bg-img {
+        height: 110vh;
+    }
+    header {
+        #logo {
+       
+            img {
+                margin-left: 2rem;
+            }
+        }
+    }
+    .navbar {
+      width: 25%;
     
-            &.ship-space {
-                top: 20%;
-                left: 10%;
+    }
+    .change {
+        right: 0%;
+    }
+    .nav-links {
+        right: -95%;
+    }
+
+    main {
+        .main-text {
+            margin-top: 10%;
+            h1 {
+                font-size: 4.2rem;
+                font-weight: bolder;
+                letter-spacing: .8rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        .ship {
+            img {
                 width: 250px;
-                z-index: 1;
+                top: 70%;
+                left: 20%;
                 cursor: pointer;
                 transition: ease-in-out 1.5s;
 
                 &:hover {
-                    transform: translateY(5px);
-                    transition: ease .5s;
+                    transform: rotate(20deg);
+                    transition: ease 1.5s;
                 }
-                &:active {
-                    transform: translatey(-15px);
-
-                }
-    
             }
-            &.astro-man {
-                right: 5%;
-                top: -10%;
-                width: 200px;
+        }
+    }
+    // SECTION 1
+    section.sec-bg.sec-1 {
+        .planet-pink {
+            img{
+                width: 220px;
+                right: 18%;
                 cursor: pointer;
+                transition: ease-in-out 1.5s;
+
+                &:hover {
+                    transform: rotate(-25deg);
+                    transition: ease 1.5s;
+                }
             }
-            &.cloud {
-                top: 65%;
-                left: 7%;
-                width: 130px;
-                z-index: 1;
-                transform: rotate(15deg);
+        }
+        .text-content {
+            margin-top: 10%;
+            text-align: center;
+            h2 {
+                margin-top: 2.5rem;
+                font-size: 2.5rem;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.3rem;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2rem;
+            }
+            .btn {
+                margin: 0;
+                font-size: 1.3rem;
+                width: 35%;
+                letter-spacing: 2px;
+                padding: 1rem 2rem;
+
+            }
+        }
+        .man-planet {
+
+            img {
+                width: 450px;
+                left: 5%;
+                cursor: pointer;
+                transition: all 1.5s ;
+
+                &:hover {
+                    transform: rotate(-5deg);
+                    transition: 1s ease-out;
+                }
+            }
+        }
+    }
+    // SECTION 2 
+    section.sec-2 {
+        height: 90vh;
+        .halo-big {
+            .halo {
+                top: 5%;
+                width: 30%;
+                right: -18%;
+                
+            }
+            .ship {
+                cursor: pointer;
+                width: 150px;
+                top: 40%;
+                right: 5%;
+                transition: ease-in-out 1.5s;
+    
+                &:hover {
+                    transform: rotate(20deg);
+                    transition: ease 1.5s;
+                }
+        }
+        }
+    }
+    // SECTION 3
+    section.sec-bg.sec-3 {
+        height: 80vh;
+        .dark-layer {
+            .dark {
+                height: 60vh;
+                z-index:2 ;
+            }
+            .earth {
+                width: 200px;
+                top: 35%;
+                right: 15%;
+            }
+            .rockfire {
+                top: 10%;
+                left: 5%;
+            }
+        }
+        .text-content2 {
+            margin: 1rem;
+            
+            h2 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1.3rem;
             }
         }
 
-
     }
-}
+    // SECTION 4 
+    section.sec-4 {
+        height: 800px;
+        .planets {
+            padding-top: 3rem;
+            display: flex;
+
+            span {
+                display:inline;
+                flex-direction: column;
+            }
+
+            .all-planets {
+                transition: all 1s ease;
+                &:hover {
+                    transform: rotate(5deg);
+                    transition: ease-out 1s;
+                    width: 60%;
+                }
+            }
+        }
+
+        .two-btn {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            width: 40%;
+            height: 50px;
+            margin: 3rem auto;
+    
+            .btn {
+                display: block;
+                width: 50%;
+                font-size: 1.3rem;
+                letter-spacing: 3px;
+                margin: 0 .5rem;
+                
+            }
+        }
+    }
+    section.sec-5 {
+        border: solid;
+        display: none;
+        height: 50vh;
+    }
+    // FOOTER 
+    footer {
+        height: 50vh;
+        #footer-sec {
+            height: 50vh;
+            img {
+
+
+                &.dark-back {
+                    width: 100%;
+                    bottom: -20%;
+                    height: 70vh;
+                }
+            
+                &.ship-space {
+                    top: 25%;
+                    left: 9%;
+                    width: 250px;
+                    z-index: 1;
+                    cursor: pointer;
+                    transition: ease-in-out 1.5s;
+
+                    &:hover {
+                        transform: translateY(5px);
+                        transition: ease .5s;
+                    }
+                    &:active {
+                        transform: translatey(-15px);
+
+                    }
+                
+                }
+                &.astro-man {
+                    right: 5%;
+                    top: -10%;
+                    width: 200px;
+                    cursor: pointer;
+                }
+                &.cloud {
+                    top: 70%;
+                    left: 7%;
+                    width: 130px;
+                    z-index: 1;
+                    transform: rotate(15deg);
+                }
+            }
+        }
+        #footer-text {
+            top: 100%;
+            margin-top: 2%;
+        }
+    }
 
 }

@@ -25,7 +25,7 @@ header {
            width: 120px;
            display: block;
            padding-left: 1rem;
-           margin: .5rem 0 0 0;
+           margin: .5rem 0 0 .2rem;
        }
     }
 }
@@ -412,7 +412,7 @@ footer {
         top: 90%;
         margin: auto;
         text-align: center;
-        color: $marcury-color;
+        color: $addition-color;
         z-index: 3;
     }
 }
