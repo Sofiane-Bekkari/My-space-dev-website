@@ -55,8 +55,6 @@
 
         .halo-big {
 
-            .halo {
-            }
             .ship {
                 width: 25%;
                 top: 20%;
@@ -169,4 +167,221 @@
             width: 60%;
         }
     }
+}
+
+// Media AT Meddim Screen 
+@include mediaLg {
+    #bg-img {
+        height: 75vh;
+    }
+    .navbar {
+      width: 35%;
+    
+    }
+    .change {
+        right: 0%;
+    }
+
+    main {
+        .main-text {
+            h1 {
+                font-size: 3rem;
+                font-weight: bolder;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        .ship {
+            img {
+                width: 200px;
+                top: 70%;
+                left: 8%;
+                cursor: pointer;
+                transition: ease-in-out 1.5s;
+
+                &:hover {
+                    transform: rotate(20deg);
+                    transition: ease 1.5s;
+                }
+            }
+        }
+    }
+    // SECTION 1
+    section.sec-bg.sec-1 {
+        .planet-pink {
+            img{
+                width: 120px;
+                right: 270px;
+                cursor: pointer;
+                transition: ease-in-out 1.5s;
+
+                &:hover {
+                    transform: rotate(-25deg);
+                    transition: ease 1.5s;
+                }
+            }
+        }
+        .text-content {
+            h2 {
+                margin-top: 2.5rem;
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+            .btn {
+                margin: 0;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+
+            }
+        }
+        .man-planet {
+
+            img {
+                width: 350px;
+                left: 0%;
+            }
+        }
+    }
+    // SECTION 2 
+    section.sec-2 {
+        .halo-big {
+            .halo {
+                top: 10%;
+                right: -10%;
+            }
+        
+        }
+        .ship {
+            cursor: pointer;
+            transition: ease-in-out 1.5s;
+
+            &:hover {
+                transform: rotate(20deg);
+                transition: ease 1.5s;
+            }
+        }
+    }
+    // SECTION 3
+    section.sec-bg.sec-3 {
+        height: 70vh;
+        .dark-layer {
+            .dark {
+                height: 50vh;
+            }
+            .earth {
+                width: 150px;
+                top: 35%;
+                right: 15%;
+            }
+            .rockfire {
+                top: 10%;
+                left: 5%;
+            }
+        }
+        .text-content2 {
+            margin: 1rem;
+            
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+    // SECTION 4 
+    section.sec-4 {
+        height: 800px;
+        .planets {
+            padding-top: 3rem;
+            display: flex;
+
+            span {
+                display:inline;
+                flex-direction: column;
+            }
+
+            .all-planets {
+                transition: all 1s ease;
+                &:hover {
+                    transform: rotate(5deg);
+                    transition: ease-out 1s;
+                    width: 76%;
+                }
+            }
+        }
+
+        .two-btn {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+            width: 50%;
+            height: 50px;
+            margin: 3rem auto;
+    
+            .btn {
+                display: block;
+                padding: 0;
+                margin-right: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    // FOOTER 
+footer {
+    #footer-sec {
+        height: 50vh;
+        img {
+            
+
+            &.dark-back {
+                width: 100%;
+                bottom: -20%;
+                height: 70vh;
+            }
+    
+            &.ship-space {
+                top: 20%;
+                left: 10%;
+                width: 250px;
+                z-index: 1;
+                cursor: pointer;
+                transition: ease-in-out 1.5s;
+
+                &:hover {
+                    transform: translateY(5px);
+                    transition: ease .5s;
+                }
+                &:active {
+                    transform: translatey(-15px);
+
+                }
+    
+            }
+            &.astro-man {
+                right: 5%;
+                top: -10%;
+                width: 200px;
+                cursor: pointer;
+            }
+            &.cloud {
+                top: 65%;
+                left: 7%;
+                width: 130px;
+                z-index: 1;
+                transform: rotate(15deg);
+            }
+        }
+
+
+    }
+}
+
 }

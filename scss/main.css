@@ -112,7 +112,7 @@ header #logo img {
   height: 100vh;
   top: 0;
   width: 50%;
-  right: -250px;
+  right: -550px;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +250,7 @@ section.sec-bg.sec-1 {
 }
 
 section.sec-bg.sec-1 .planet-pink img {
-  width: 20%;
+  width: 100px;
   position: absolute;
   display: block;
   top: 5%;
@@ -317,14 +317,14 @@ section.sec-2 .halo-big {
 }
 
 section.sec-2 .halo-big .halo {
-  width: 50%;
+  width: 250px;
   position: absolute;
   right: -25%;
   z-index: 1;
 }
 
 section.sec-2 .halo-big .ship {
-  width: 25%;
+  width: 120px;
   position: absolute;
   top: 25%;
   right: 10%;
@@ -332,7 +332,7 @@ section.sec-2 .halo-big .ship {
 
 section.sec-bg.sec-3 {
   position: relative;
-  height: 50vh;
+  height: 55vh;
 }
 
 section.sec-bg.sec-3 .dark-layer {
@@ -351,21 +351,20 @@ section.sec-bg.sec-3 .dark-layer .earth {
   position: absolute;
   top: 30%;
   right: 10%;
-  width: 25%;
+  width: 120px;
 }
 
 section.sec-bg.sec-3 .dark-layer .rockfire {
   display: block;
   position: absolute;
   top: 0;
-  width: 20%;
+  width: 100px;
 }
 
 section.sec-bg.sec-3 .text-content2 {
   text-align: center;
-  padding-bottom: 0;
-  margin-top: 1rem;
-  margin-bottom: 0;
+  padding: 1rem;
+  margin-bottom: 5rem;
 }
 
 section.sec-bg.sec-3 .text-content2 h2 {
@@ -401,6 +400,7 @@ section.sec-4 .planets span {
   text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 section.sec-4 .planets span.mars {
@@ -417,7 +417,7 @@ section.sec-4 .planets span.star {
 
 section.sec-4 .planets .all-planets {
   display: block;
-  width: 40%;
+  width: 150px;
   margin: 0 auto 1rem auto;
   cursor: pointer;
 }
@@ -471,27 +471,28 @@ footer #footer-sec img.dark-back {
   width: 100%;
   position: absolute;
   bottom: -20%;
+  height: 50vh;
 }
 
 footer #footer-sec img.ship-space {
   position: absolute;
   top: 50%;
   left: 9%;
-  width: 30%;
+  width: 150px;
 }
 
 footer #footer-sec img.astro-man {
   position: absolute;
   right: 0;
-  top: 23%;
-  width: 30%;
+  top: 25%;
+  width: 150px;
 }
 
 footer #footer-sec img.cloud {
   position: absolute;
   top: 75%;
   left: 4%;
-  width: 20%;
+  width: 100px;
   z-index: 1;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
@@ -645,6 +646,196 @@ footer #footer-text {
   }
   footer #footer-text {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #bg-img {
+    height: 75vh;
+  }
+  .navbar {
+    width: 35%;
+  }
+  .change {
+    right: 0%;
+  }
+  main .main-text h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  main .main-text p {
+    font-size: 1.2rem;
+  }
+  main .ship img {
+    width: 200px;
+    top: 70%;
+    left: 8%;
+    cursor: pointer;
+    -webkit-transition: ease-in-out 1.5s;
+    transition: ease-in-out 1.5s;
+  }
+  main .ship img:hover {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    -webkit-transition: ease 1.5s;
+    transition: ease 1.5s;
+  }
+  section.sec-bg.sec-1 .planet-pink img {
+    width: 120px;
+    right: 270px;
+    cursor: pointer;
+    -webkit-transition: ease-in-out 1.5s;
+    transition: ease-in-out 1.5s;
+  }
+  section.sec-bg.sec-1 .planet-pink img:hover {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+    -webkit-transition: ease 1.5s;
+    transition: ease 1.5s;
+  }
+  section.sec-bg.sec-1 .text-content h2 {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+  }
+  section.sec-bg.sec-1 .text-content p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  section.sec-bg.sec-1 .text-content .btn {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  section.sec-bg.sec-1 .man-planet img {
+    width: 350px;
+    left: 0%;
+  }
+  section.sec-2 .halo-big .halo {
+    top: 10%;
+    right: -10%;
+  }
+  section.sec-2 .ship {
+    cursor: pointer;
+    -webkit-transition: ease-in-out 1.5s;
+    transition: ease-in-out 1.5s;
+  }
+  section.sec-2 .ship:hover {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    -webkit-transition: ease 1.5s;
+    transition: ease 1.5s;
+  }
+  section.sec-bg.sec-3 {
+    height: 70vh;
+  }
+  section.sec-bg.sec-3 .dark-layer .dark {
+    height: 50vh;
+  }
+  section.sec-bg.sec-3 .dark-layer .earth {
+    width: 150px;
+    top: 35%;
+    right: 15%;
+  }
+  section.sec-bg.sec-3 .dark-layer .rockfire {
+    top: 10%;
+    left: 5%;
+  }
+  section.sec-bg.sec-3 .text-content2 {
+    margin: 1rem;
+  }
+  section.sec-bg.sec-3 .text-content2 h2 {
+    font-size: 2.5rem;
+  }
+  section.sec-bg.sec-3 .text-content2 p {
+    font-size: 1.2rem;
+  }
+  section.sec-4 {
+    height: 800px;
+  }
+  section.sec-4 .planets {
+    padding-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.sec-4 .planets span {
+    display: inline;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.sec-4 .planets .all-planets {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  section.sec-4 .planets .all-planets:hover {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    -webkit-transition: ease-out 1s;
+    transition: ease-out 1s;
+    width: 76%;
+  }
+  section.sec-4 .two-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 1rem;
+    width: 50%;
+    height: 50px;
+    margin: 3rem auto;
+  }
+  section.sec-4 .two-btn .btn {
+    display: block;
+    padding: 0;
+    margin-right: .5rem;
+    font-size: 1.2rem;
+  }
+  footer #footer-sec {
+    height: 50vh;
+  }
+  footer #footer-sec img.dark-back {
+    width: 100%;
+    bottom: -20%;
+    height: 70vh;
+  }
+  footer #footer-sec img.ship-space {
+    top: 20%;
+    left: 10%;
+    width: 250px;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: ease-in-out 1.5s;
+    transition: ease-in-out 1.5s;
+  }
+  footer #footer-sec img.ship-space:hover {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+  }
+  footer #footer-sec img.ship-space:active {
+    -webkit-transform: translatey(-15px);
+            transform: translatey(-15px);
+  }
+  footer #footer-sec img.astro-man {
+    right: 5%;
+    top: -10%;
+    width: 200px;
+    cursor: pointer;
+  }
+  footer #footer-sec img.cloud {
+    top: 65%;
+    left: 7%;
+    width: 130px;
+    z-index: 1;
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
   }
 }
 /*# sourceMappingURL=main.css.map */

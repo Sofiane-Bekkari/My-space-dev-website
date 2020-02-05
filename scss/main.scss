@@ -64,7 +64,7 @@ header {
     height: 100vh;
     top:0;
     width: 50%;
-    right: -250px;
+    right: -550px;
     position: fixed;
     display: flex;
     justify-content:center;
@@ -177,7 +177,7 @@ section.sec-bg {
 
         .planet-pink {
             img {
-                width: 20%;
+                width: 100px;
                 position: absolute;
                 display: block;
                 top: 5%;
@@ -234,14 +234,14 @@ section.sec-2 {
         flex-direction: row-reverse;
         width: 100%;
         .halo {
-            width: 50%;
+            width: 250px;
             position: absolute;
             right: -25%;
             z-index: 1;
     
         }
         .ship {
-            width: 25%;
+            width: 120px;
             position: absolute;
             top: 25%;
             right: 10%;
@@ -253,7 +253,7 @@ section.sec-2 {
 
 section.sec-bg.sec-3 {
     position: relative;
-    height: 50vh;
+    height: 55vh;
 
     .dark-layer {
         text-align: center;
@@ -268,20 +268,19 @@ section.sec-bg.sec-3 {
             position: absolute;
             top: 30%;
             right: 10%;
-            width: 25%;
+            width: 120px;
         }
         .rockfire {
             display: block;
             position: absolute;
             top: 0;
-            width: 20%;
+            width: 100px;
         }
     }
     .text-content2 {
         text-align: center;
-        padding-bottom:0;
-        margin-top: 1rem ;
-        margin-bottom: 0;
+        padding: 1rem;
+        margin-bottom: 5rem;
 
         h2 {
             color: $primary-color;
@@ -315,6 +314,7 @@ section.sec-4 {
             text-transform: uppercase;
             font-size: 1.5rem;
             text-align: center;
+            margin-bottom: 1rem;
 
             &.mars {
                 color: $third-color;
@@ -328,7 +328,7 @@ section.sec-4 {
         }
         .all-planets {
             display: block;
-            width: 40%;
+            width: 150px;
             margin:0 auto 1rem auto;
             cursor: pointer;
 
@@ -378,26 +378,27 @@ footer {
                 width: 100%;
                 position: absolute;
                 bottom: -20%;
+                height: 50vh;
             }
 
             &.ship-space {
                 position: absolute;
                 top: 50%;
                 left: 9%;
-                width: 30%;
+                width: 150px;
 
             }
             &.astro-man {
                 position: absolute;
                 right: 0;
-                top: 23%;
-                width: 30%;
+                top: 25%;
+                width: 150px;
             }
             &.cloud {
                 position: absolute;
                 top: 75%;
                 left: 4%;
-                width: 20%;
+                width: 100px;
                 z-index: 1;
                 transform: rotate(10deg);
             }
