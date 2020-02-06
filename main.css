@@ -573,6 +573,15 @@ footer #footer-text {
   z-index: 3;
 }
 
+footer #footer-text a {
+  text-decoration: none;
+  color: #9B9DA1;
+}
+
+footer #footer-text a:hover {
+  color: #00ffffb6;
+}
+
 @media screen and (max-width: 499px) {
   body {
     overflow-x: hidden;
