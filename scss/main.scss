@@ -154,15 +154,30 @@ main {
             width: 55%;
             text-shadow: 2px 2px 3px #333 ;
         }
+        button {
+            margin-top: 3rem;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
     }
     .ship {
+
        img {
         position: absolute;
-        left: 20%;
-        top: 75%;
+        left: 10%;
+        top: 70%;
         display: block;
         width: 110px;
        }
+    }
+    img {
+        &.planet-big {
+        display: block;
+        position: absolute;
+        width: 25%;
+        top: 58%;
+        right: -15%;
+        }
     }
 }
 
@@ -174,14 +189,14 @@ section.sec-bg {
 
     &.sec-1 {
         position: relative;
-
+        height: 50vh;
         .planet-pink {
             img {
                 width: 100px;
                 position: absolute;
                 display: block;
                 top: 5%;
-                right: 15%;
+                right: 23%;
                 margin-bottom: 2rem;
             }
         }
@@ -216,7 +231,7 @@ section.sec-bg {
         .man-planet {
             img {
                 position: absolute;
-                width: 50%;
+                width: 250px;
                 top: 25%;
                 left: -10%;
                 z-index: 1;
@@ -228,6 +243,46 @@ section.sec-bg {
 // Section Two Style 
 section.sec-2 {
     position: relative;
+
+    .planet-pink {
+        img {
+            width: 100px;
+            position: absolute;
+            display: block;
+            top: 5%;
+            right: 23%;
+            margin-bottom: 2rem;
+        }
+    }
+    .text-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 5%;
+        top: 25%;
+        margin: 1rem auto;
+        width: 50%;
+        height: 50%;
+        z-index: 1;
+
+        h2 {
+            color: $secondary-color;
+
+        }
+
+        p {
+            color: $third-color;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            margin: 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+
+        }
+    }
+
 
     .halo-big {
         display: flex;

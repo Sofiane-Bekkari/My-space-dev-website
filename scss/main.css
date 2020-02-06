@@ -26,7 +26,7 @@
 
 .btn-blue:hover {
   background: #00ffff60;
-  color: #9B9DA1;
+  color: #00ffffb6;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -235,12 +235,26 @@ main .main-text p {
   text-shadow: 2px 2px 3px #333;
 }
 
+main .main-text button {
+  margin-top: 3rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
 main .ship img {
   position: absolute;
-  left: 20%;
-  top: 75%;
+  left: 10%;
+  top: 70%;
   display: block;
   width: 110px;
+}
+
+main img.planet-big {
+  display: block;
+  position: absolute;
+  width: 25%;
+  top: 58%;
+  right: -15%;
 }
 
 section.sec-bg {
@@ -251,6 +265,7 @@ section.sec-bg {
 
 section.sec-bg.sec-1 {
   position: relative;
+  height: 50vh;
 }
 
 section.sec-bg.sec-1 .planet-pink img {
@@ -258,7 +273,7 @@ section.sec-bg.sec-1 .planet-pink img {
   position: absolute;
   display: block;
   top: 5%;
-  right: 15%;
+  right: 23%;
   margin-bottom: 2rem;
 }
 
@@ -299,7 +314,7 @@ section.sec-bg.sec-1 .text-content .btn {
 
 section.sec-bg.sec-1 .man-planet img {
   position: absolute;
-  width: 50%;
+  width: 250px;
   top: 25%;
   left: -10%;
   z-index: 1;
@@ -307,6 +322,50 @@ section.sec-bg.sec-1 .man-planet img {
 
 section.sec-2 {
   position: relative;
+}
+
+section.sec-2 .planet-pink img {
+  width: 100px;
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 23%;
+  margin-bottom: 2rem;
+}
+
+section.sec-2 .text-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 5%;
+  top: 25%;
+  margin: 1rem auto;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+
+section.sec-2 .text-content h2 {
+  color: #F05B6F;
+}
+
+section.sec-2 .text-content p {
+  color: #F7941E;
+  margin-bottom: 1.5rem;
+}
+
+section.sec-2 .text-content .btn {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 section.sec-2 .halo-big {
@@ -552,6 +611,10 @@ footer #footer-text {
     right: -40px;
     padding: 3px 0;
   }
+  main .main-text button {
+    margin-top: 16%;
+    font-size: 1.2rem;
+  }
   section.sec-bg.sec-1 .text-content .btn {
     width: 90%;
     font-size: 1.2rem;
@@ -561,6 +624,12 @@ footer #footer-text {
     top: 3%;
     display: block;
     width: 30%;
+  }
+  section.sec-bg.sec-1 .man-planet img {
+    width: 220px;
+  }
+  section.sec-2 .halo-big .halo {
+    width: 50%;
   }
   section.sec-2 .halo-big .ship {
     width: 25%;
@@ -596,6 +665,7 @@ footer #footer-text {
   section.sec-bg.sec-3 .text-content2 {
     width: 100%;
     text-align: center;
+    padding: 0;
     margin: 3rem auto;
   }
   section.sec-bg.sec-3 .text-content2 h2 {
@@ -610,7 +680,7 @@ footer #footer-text {
     padding-top: 1rem;
   }
   section.sec-4 .planets img.all-planets {
-    width: 30%;
+    width: 60%;
     margin-bottom: .5rem;
   }
   section.sec-4 .planets span {
@@ -637,7 +707,7 @@ footer #footer-text {
   }
   footer #footer-sec img.astro-man {
     right: 5%;
-    top: 55%;
+    top: 40%;
     width: 30%;
   }
   footer #footer-sec img.cloud {
@@ -649,7 +719,7 @@ footer #footer-text {
             transform: rotate(9deg);
   }
   footer #footer-text {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -671,6 +741,10 @@ footer #footer-text {
     font-weight: bolder;
   }
   main .main-text p {
+    font-size: 1.2rem;
+  }
+  main .main-text button {
+    margin-top: 17%;
     font-size: 1.2rem;
   }
   main .ship img {
@@ -715,12 +789,27 @@ footer #footer-text {
     letter-spacing: 1px;
   }
   section.sec-bg.sec-1 .man-planet img {
-    width: 350px;
-    left: 0%;
+    top: 0;
+    width: 300px;
+    left: 3%;
   }
   section.sec-2 .halo-big .halo {
     top: 10%;
     right: -10%;
+  }
+  section.sec-2 .text-content h2 {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+  }
+  section.sec-2 .text-content p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  section.sec-2 .text-content .btn {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
   }
   section.sec-2 .ship {
     cursor: pointer;
@@ -860,7 +949,7 @@ footer #footer-text {
     right: 0%;
   }
   .nav-links {
-    right: -95%;
+    right: -80px;
   }
   main .main-text {
     margin-top: 10%;
@@ -873,10 +962,14 @@ footer #footer-text {
   main .main-text p {
     font-size: 1.4rem;
   }
+  main .main-text button {
+    margin-top: 12rem;
+    font-size: 1.4rem;
+  }
   main .ship img {
     width: 250px;
     top: 70%;
-    left: 20%;
+    left: 10%;
     cursor: pointer;
     -webkit-transition: ease-in-out 1.5s;
     transition: ease-in-out 1.5s;
@@ -925,7 +1018,8 @@ footer #footer-text {
   }
   section.sec-bg.sec-1 .man-planet img {
     width: 450px;
-    left: 5%;
+    top: 0;
+    left: 10%;
     cursor: pointer;
     -webkit-transition: all 1.5s;
     transition: all 1.5s;
@@ -957,6 +1051,29 @@ footer #footer-text {
             transform: rotate(20deg);
     -webkit-transition: ease 1.5s;
     transition: ease 1.5s;
+  }
+  section.sec-2 .text-content {
+    margin-top: 10%;
+    text-align: center;
+  }
+  section.sec-2 .text-content h2 {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+  }
+  section.sec-2 .text-content p {
+    text-align: center;
+    font-size: 1.3rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+  section.sec-2 .text-content .btn {
+    margin: 0;
+    font-size: 1.3rem;
+    width: 35%;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
   }
   section.sec-bg.sec-3 {
     height: 80vh;

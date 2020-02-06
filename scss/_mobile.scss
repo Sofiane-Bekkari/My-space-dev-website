@@ -32,6 +32,15 @@
         right: -40px;
         padding: 3px 0;
     }
+    main {
+        .main-text {
+            button {
+            
+                margin-top: 16% ;
+                font-size: 1.2rem;
+            }
+    }
+    }
     // SECTION 1
     section.sec-bg.sec-1 {
 
@@ -49,11 +58,19 @@
                 width: 30%;
             }
         }
+        .man-planet {
+            img {
+                width: 220px;
+            }
+        }
     }
     // SECTION 2
     section.sec-2 {
 
         .halo-big {
+            .halo {
+                width: 50%;
+            }
 
             .ship {
                 width: 25%;
@@ -92,6 +109,7 @@
         .text-content2 {
             width: 100%;
             text-align: center;
+            padding: 0;
             margin: 3rem auto;
 
             h2 {
@@ -111,7 +129,7 @@
             padding-top: 1rem ;
             img{
                 &.all-planets {
-                    width: 30%;
+                    width: 60%;
                     margin-bottom: .5rem;
                 }
             }
@@ -151,7 +169,7 @@
                 }
                 &.astro-man {
                     right: 5%;
-                    top: 55%;
+                    top: 40%;
                     width: 30%;
                 }
                 &.cloud {
@@ -164,7 +182,7 @@
             }
         }
         #footer-text {
-            width: 60%;
+            width: 80%;
         }
     }
 }
@@ -196,6 +214,10 @@
                 font-weight: bolder;
             }
             p {
+                font-size: 1.2rem;
+            }
+            button {
+                margin-top: 17%;
                 font-size: 1.2rem;
             }
         }
@@ -250,8 +272,9 @@
         .man-planet {
 
             img {
-                width: 350px;
-                left: 0%;
+                top:0;
+                width: 300px;
+                left: 3%;
             }
         }
     }
@@ -263,6 +286,24 @@
                 right: -10%;
             }
         
+        }
+        .text-content {
+            h2 {
+                margin-top: 2.5rem;
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+            .btn {
+                margin: 0;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+
+            }
         }
         .ship {
             cursor: pointer;
@@ -414,7 +455,7 @@
         right: 0%;
     }
     .nav-links {
-        right: -95%;
+        right: -80px;
     }
 
     main {
@@ -428,12 +469,16 @@
             p {
                 font-size: 1.4rem;
             }
+            button {
+                margin-top: 12rem;
+                font-size: 1.4rem;
+            }
         }
         .ship {
             img {
                 width: 250px;
                 top: 70%;
-                left: 20%;
+                left: 10%;
                 cursor: pointer;
                 transition: ease-in-out 1.5s;
 
@@ -488,7 +533,8 @@
 
             img {
                 width: 450px;
-                left: 5%;
+                top: 0;
+                left: 10%;
                 cursor: pointer;
                 transition: all 1.5s ;
 
@@ -520,7 +566,32 @@
                     transform: rotate(20deg);
                     transition: ease 1.5s;
                 }
+            }
         }
+        .text-content {
+            margin-top: 10%;
+            text-align: center;
+            h2 {
+                margin-top: 2.5rem;
+                font-size: 2.5rem;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.3rem;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 2rem;
+            }
+            .btn {
+                margin: 0;
+                font-size: 1.3rem;
+                width: 35%;
+                letter-spacing: 2px;
+                padding: 1rem 2rem;
+
+            }
         }
     }
     // SECTION 3
