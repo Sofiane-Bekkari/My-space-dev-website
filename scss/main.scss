@@ -469,6 +469,14 @@ footer {
         text-align: center;
         color: $addition-color;
         z-index: 3;
+        a {
+            text-decoration: none;
+            color: $addition-color;
+
+            &:hover {
+                color: $primary-color
+            }
+        }
     }
 }
 
