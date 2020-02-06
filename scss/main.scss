@@ -14,7 +14,7 @@ body {
     background: linear-gradient(
     rgba(0, 0, 0, 0.055),
     rgba(13, 116, 184, 0.034)),
-    url(../Img/space-background-m.png) center no-repeat;
+    url(Img/space-background-m.png) center no-repeat;
     background-size: cover;
 }
 header {
@@ -183,7 +183,7 @@ main {
 
 // Section style
 section.sec-bg {
-    background: url(../Img/background-space.png) no-repeat center;
+    background: url(Img/background-space.png) no-repeat center;
     background-size: cover;
     height: 50vh;
 
@@ -349,7 +349,7 @@ section.sec-bg.sec-3 {
 }
 
 section.sec-4 {
-    background: url(../Img/background-space.png) no-repeat center;
+    background: url(Img/background-space.png) no-repeat center;
     background-size: cover;
     position: relative;
     top: 0%;
@@ -391,7 +391,7 @@ section.sec-4 {
     }
     // Button Planet
     .two-btn {
-        background: url(../Img/background-space.png) no-repeat center;
+        background: url(Img/background-space.png) no-repeat center;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -418,7 +418,7 @@ section.sec-5 {
 // Footer 
 footer {
     width: 100%;
-    background: url(../Img/background-space.png) no-repeat center;
+    background: url(Img/background-space.png) no-repeat center;
     background-size: cover;
     height: 60vh;
     position: relative;

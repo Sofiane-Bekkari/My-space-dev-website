@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Solar system website",
   "main": "index.js",
-  "homepage":"https://sofiane-bekkari.github.io/My-space-dev-website",
+  "homepage": "https://sofiane-bekkari.github.io/My-space-website",
   "dependencies": {
     "gh-pages": "^2.2.0"
   },
