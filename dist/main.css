@@ -45,6 +45,10 @@
   padding: 0;
 }
 
+html, body, .overflowWrap {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Dosis', sans-serif;
   overflow-x: hidden;
@@ -64,10 +68,10 @@ header {
 }
 
 header #logo img {
-  width: 120px;
+  width: 110px;
   display: block;
   padding-left: 1rem;
-  margin: .5rem 0 0 .2rem;
+  margin: .8rem 0 0 .2rem;
 }
 
 .burger-menu {
@@ -591,13 +595,13 @@ footer #footer-text a:hover {
   }
   .burger-menu {
     position: fixed;
-    right: 25%;
+    right: 7%;
   }
   .navbar {
     height: 80vh;
     top: 0;
-    width: 50%;
-    right: -250px;
+    width: 40%;
+    right: -180px;
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -614,10 +618,11 @@ footer #footer-text a:hover {
     z-index: 5;
   }
   .change {
-    right: 20%;
+    right: 0%;
+    width: 55%;
   }
   .nav-links {
-    right: -40px;
+    right: -15px;
     padding: 3px 0;
   }
   main .main-text button {
@@ -626,13 +631,13 @@ footer #footer-text a:hover {
   }
   section.sec-bg.sec-1 .text-content .btn {
     width: 90%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
   }
   section.sec-bg.sec-1 .planet-pink img {
-    top: 3%;
+    top: 5px;
     display: block;
-    width: 30%;
+    width: 25%;
   }
   section.sec-bg.sec-1 .man-planet img {
     width: 220px;
@@ -686,7 +691,7 @@ footer #footer-text a:hover {
     margin: auto;
   }
   section.sec-4 .planets {
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
   section.sec-4 .planets img.all-planets {
     width: 60%;

@@ -9,13 +9,13 @@
     //FIX Burger & Nav
     .burger-menu {
         position: fixed;
-        right: 25%;
+        right: 7%;
     }
     .navbar {
         height: 80vh;
         top:0;
-        width: 50%;
-        right: -250px;
+        width: 40%;
+        right: -180px;
         position: fixed;
         display: flex;
         justify-content:center;
@@ -26,10 +26,11 @@
     
     }
     .change {
-        right: 20%;
+        right: 0%;
+        width: 55%;
     }
     .nav-links {
-        right: -40px;
+        right: -15px;
         padding: 3px 0;
     }
     main {
@@ -47,15 +48,15 @@
         .text-content {
             .btn {
                 width: 90%;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: bold;
             }
         }
         .planet-pink {
             img {
-                top: 3%;
+                top: 5px;
                 display: block;
-                width: 30%;
+                width: 25%;
             }
         }
         .man-planet {
@@ -126,7 +127,7 @@
     // SECTION 4
     section.sec-4 {
         .planets {
-            padding-top: 1rem ;
+            padding-top: 2rem ;
             img{
                 &.all-planets {
                     width: 60%;
